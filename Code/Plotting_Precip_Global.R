@@ -45,7 +45,7 @@ overlap <- function(P,E,NR,D){
   iret = list(Startpt = start, Endpt = end)
 }
 
-
+cols = c(12,3, 4)
 ##########
 ### Summing
 ##########

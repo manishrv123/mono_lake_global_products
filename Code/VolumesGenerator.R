@@ -16,5 +16,11 @@ for (i in cols){
   p_vol[i] = (p[i]/12)*p$Area
 }
 
+in_situ_cols = c(1,2,3,4,5,18)
+global_evap =c(5,6)
+global_precip = c(5,6)
+
+in_situ_average = rowMeans(data[ , in_situ_cols], na.rm=TRUE)
+
 write.csv(e_vol,"Evaporation_Global_Volume.csv",na = "", row.names = FALSE)
 write.csv(p_vol,"Precipitation_Global_Volume.csv",na = "", row.names = FALSE)
